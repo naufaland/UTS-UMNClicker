@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+</head>
+<body>
+<head>
+    <style>
+        body {
+            background-color: rgb(0, 103, 188);
+            text-align: center;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        img {
+            padding: 20px;
+            border: 3px solid grey;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            border: 3px solid maroon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to the clicker game</h1>
+
+    <p>Click the button to get a higher score!</p>
+
+    <p id="scoreText">Score: 0</p>
+
+    <button id="score">Click me!</button>
+
+    <h2>Store</h2>
+    <p>Clicker: 10 clicks</p>
+    <img id="buy" src="cursor-23231_640.png" width=50px>
+    <p id="clicker">x1</p>
+
+    <p>Auto Clicker: 1000 clicks</p>
+    <img id="buy-auto-clicker" src="cursor-154478_640.png" width=50px>
+    <p id="auto-clickers">x0</p>
+
+
+    <script>
+
+        let score = 0;
+        let clickers = 1;
+        let autoClickers = 0;
+
+        document.getElementById("score").addEventListener("click", function () {
+            score = score + clickers;
+            document.getElementById("scoreText").innerText = "Score: " + score;
+        });
+
+        document.getElementById("buy").addEventListener("click", function () {
+            if (score >= 10) {
+                clickers = clickers + 1;
+                score = score - 10;
+                document.getElementById("clicker").innerText = "x" + clickers;
+                document.getElementById("scoreText").innerText = "Score: " + score;
+            }
+        });
+
+        document.getElementById("buy-auto-clicker").addEventListener("click", function () {
+            if (score >= 1000) {
+                autoClickers = autoClickers + 1;
+                score = score - 1000;
+                document.getElementById("scoreText").innerText = "Score: " + score;
+                document.getElementById("auto-clickers").innerText = "x" + autoClickers;
+
+                setInterval(function () {
+                    score = score + clickers;
+                    document.getElementById("scoreText").innerText = "Score: " + score;
+                }, 1000);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
+</body>
+</html>
