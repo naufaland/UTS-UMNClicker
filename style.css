@@ -1,0 +1,28 @@
+/*About Us*/
+
+#AboutUs {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#AboutUs .Us{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.Us img {
+    border-radius: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+.Us p {
+    text-align: center;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
