@@ -7,33 +7,46 @@
     <link rel="stylesheet" href="style.css" />
     <title>Clicker Game</title>
 </head>
-<body>
+<body id="root">
 
     <h1 id="logo">Selamat Datang di Astro Clicker</h1>
 
-    <h2 id="logo1" colspan="">Menu</h2>
+    <h2 id="logo1" colspan="" onclick="openMenu()">Menu</h2>
 
-    <ul id="nav">
+    <ul id="nav" style="display: none; position: relative;">
         <li><a href="home.html">Home</a></li>
         <li><a href="index.html">Main Game</a></li>
         <li><a href="aboutus.html">About Us</a></li>
     </ul>
 
+    <div class="container">
+        <h4>Click the button to get a higher score!</h4>
 
-    <h4>Click the button to get a higher score!</h4>
+        <p id="scoreText">Score: 0</p>
+    
+        <img src="Assets/astroTapTap.png" onclick="handleTap()" width="120px"/>
+        <h2>Store</h2>
+        <div id="wrapper">
+            <div class="items">
+                <p>Tambah Karyawan: 10</p>
+                <img id="buy" src="Assets/recruit.png" onclick="handleAddStaff()" width=50px>
+                <p id="clicker">x1</p>
+            </div>
 
-    <p id="scoreText">Score: 0</p>
+            <div class="items">
+                <p>Pindah Cabang: 10000 clicks</p>
+                <img id="buy" src="Assets/staff.png" onclick="handleChangeBackground()" width=50px>
+            </div>
+        
+            <div class="items">
+                <p>Auto Clicker: 1000 clicks</p>
+                <img id="buy-auto-clicker" onclick="handleAutoClick()" src="Assets/astroAutoClick.png" width=50px>
+                <p id="auto-clickers">x0</p>
+            </div>
 
-    <button id="score" >Click me!</button>
+        </div>
+    </div>
 
-    <h2>Store</h2>
-    <p>Tambah Karyawan</p>
-    <img id="buy" src="cursor-23231_640.png" width=50px>
-    <p id="clicker">x1</p>
-
-    <p>Auto Clicker: 1000 clicks</p>
-    <img id="buy-auto-clicker" src="cursor-154478_640.png" width=50px>
-    <p id="auto-clickers">x0</p>
 
     <script src="script.js"></script>
 </body>

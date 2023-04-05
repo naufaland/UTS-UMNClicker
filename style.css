@@ -2,7 +2,7 @@
 
 body {
   font-family: arial;
-  background-color: rgb(238, 245, 164);
+  background-color: rgb(183, 59, 255);
   text-align: center;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .banner img {
   width: 20%;
-  margin-top: 10em;
+  margin-top: 5em;
   background-image: linear-gradient(to left, aqua, indigo);
   border-radius: 2em;
 }
@@ -43,7 +43,7 @@ h1 {
   cursor: pointer;
 }
 
-.play button:hover{
+.play button:hover {
   background-color: aqua;
   color: indigo;
 }
@@ -63,6 +63,7 @@ h1 {
   background-color: rgb(177, 148, 198);
   background-image: linear-gradient(to left, rgb(127, 176, 255), indigo);
   font-weight: bold;
+  cursor: grab;
 }
 
 h4 {
@@ -70,13 +71,16 @@ h4 {
   text-align: center;
 }
 h2 {
-  text-align: left;
+  text-align: center;
   color: rgb(0, 0, 0);
 }
 
 p {
-  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  padding: 2px;
+  color: rgb(213, 0, 0);
   font-size: 1.2em;
+  font-weight: bold;
 }
 
 img {
@@ -100,12 +104,13 @@ ul#nav {
   text-align: left;
   position: fixed;
   width: 100%;
-  margin-bottom: 1;
+  z-index: 999;
 }
 ul#nav li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+  cursor: grab;
 }
 
 ul#nav li a {
@@ -136,21 +141,19 @@ ul#nav li a:hover {
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
   text-align: center;
   margin-top: 4rem;
+  flex-direction: row;
 }
 
-
 .Us {
-  width: 250px;
-  height: 250px;
   padding: 16px;
   border-radius: 15px;
-  transition: all .30s ease;
+  transition: all 0.3s ease;
 }
 
 .Us img {
@@ -165,7 +168,6 @@ ul#nav li a:hover {
   font-weight: 600;
   margin-bottom: 8px;
   margin-left: 40px;
-
 }
 
 .Us h5 {
@@ -180,7 +182,7 @@ ul#nav li a:hover {
   display: inline-block;
   font-size: 20px;
   margin: 0 8px;
-  transition: all .30s ease;
+  transition: all 0.3s ease;
   margin-left: 50px;
   margin-right: 10px;
 }
@@ -194,7 +196,7 @@ ul#nav li a:hover {
   cursor: pointer;
 }
 
-.logo2 h1 {
+#logo2 h1 {
   font-size: 4rem;
   text-align: center;
   border-radius: 6px;
@@ -204,6 +206,21 @@ ul#nav li a:hover {
   background-image: linear-gradient(to left, rgb(127, 176, 255), indigo);
   font-weight: bold;
   display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+ul#footer {
+  padding: 10px 2em;
+  background-color: aquamarine;
+  background-image: linear-gradient(to left, aqua, indigo);
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 999;
+  margin: 0px;
+  left: 0px;
 }
 
 @media (max-width: 768px) {
@@ -215,4 +232,28 @@ ul#nav li a:hover {
   .logo2 h1 {
     font-size: 3.2rem;
   }
+  #AboutUs {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+  }
+}
+
+#root {
+  height: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("Assets/level1-city.jpg");
+}
+
+#wrapper {
+  display: flex;
+  justify-content: space-evenly;
 }
