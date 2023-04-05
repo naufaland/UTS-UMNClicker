@@ -35,6 +35,9 @@ function handleAddStaff() {
     clickerElement.innerText = `x${clickers}`;
     scoreTextElement.innerText = `Score: ${score}`;
   }
+  else {
+    alert('Kamu tidak punya cukup Score (Click) untuk menambah karyawan!');
+  }
 }
 
 function handleAutoClick() {
@@ -49,6 +52,9 @@ function handleAutoClick() {
     }, 1000);
 
     scoreTextElement.innerText = `Score: ${score}`;
+  }
+  else {
+    alert('Kamu tidak punya cukup Score (Click) untuk membeli Auto Clicker!');
   }
 }
 
@@ -66,5 +72,8 @@ function handleChangeBackground() {
       defaultPic = 1;
     }
     scoreTextElement.innerText = `Score: ${score}`;
+  }
+  else {
+    alert('Kamu tidak punya cukup Score (Click) untuk membuka cabang baru!');
   }
 }

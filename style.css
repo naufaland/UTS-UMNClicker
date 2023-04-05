@@ -69,16 +69,18 @@ h1 {
 h4 {
   margin-top: 3em;
   text-align: center;
+  color: #000;
 }
 h2 {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: aqua;
 }
 
 p {
-  background-color: aliceblue;
-  padding: 2px;
-  color: rgb(213, 0, 0);
+  background-image: linear-gradient(to left, indigo, blueviolet);
+  padding: 0.3em;
+  border-radius: 1em;
+  color: aqua;
   font-size: 1.2em;
   font-weight: bold;
 }
