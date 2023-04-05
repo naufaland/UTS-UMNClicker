@@ -6,6 +6,50 @@ body {
   text-align: center;
 }
 
+/*Home Section*/
+
+.banner {
+  justify-content: center;
+  display: flex;
+}
+
+.banner img {
+  width: 20%;
+  margin-top: 10em;
+  background-image: linear-gradient(to left, aqua, indigo);
+  border-radius: 2em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  color: cornflowerblue;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.play {
+  justify-content: center;
+  display: flex;
+}
+
+.play button {
+  padding: 1em 2em 1em 2em;
+  border-radius: 1em;
+  font-weight: bold;
+  background-color: indigo;
+  color: aqua;
+  font-size: large;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.play button:hover{
+  background-color: aqua;
+  color: indigo;
+}
+
+/*Main Section*/
+
 #logo {
   color: rgb(0, 204, 255);
   text-shadow: 2px 2px 2px #000;
@@ -42,7 +86,7 @@ img {
 }
 
 img:hover {
-  border: 3px solid rgb(196, 74, 74);
+  border: 3px solid aqua;
 }
 
 /*Navbar*/
