@@ -1,11 +1,82 @@
+/*Head*/
+
+body {
+    font-family: arial;
+    background-color: indigo;
+    text-align: center;
+}
+
+#logo {
+    color: rgb(0, 204, 255);
+    text-shadow: 2px 2px 2px #000;
+}
+
+#logo1 {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 4px;
+    color: aqua;
+    background-color: rgb(177, 148, 198);
+    background-image: linear-gradient(to left, rgb(127, 176, 255), indigo);
+    font-weight: bold;
+}
+h2 {
+    text-align: left;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+}
+
+img {
+    padding: 20px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+img:hover {
+    border: 3px solid rgb(196, 74, 74);
+}
+
+/*Navbar*/
+
+ul#nav {
+    margin: -8px -1em;
+    margin-bottom: 3em;
+    padding: 10px 2em;
+    background-color: aquamarine;
+    background-image: linear-gradient(to left, aqua, indigo);
+    text-align: left;
+}
+ul#nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px ;
+}
+
+ul#nav li a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: aqua;
+    font-weight: bold;
+    
+}
+
+ul#nav li a:hover {
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
+}
+
 /*About Us*/
 
 #AboutUs {
     justify-content: space-between;
     margin-top: 20px;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #AboutUs .Us{
