@@ -2,7 +2,7 @@
 
 body {
   font-family: arial;
-  background-color: #616283;
+  background-color: skyblue;
   text-align: center;
 }
 
@@ -71,6 +71,7 @@ h4 {
   text-align: center;
   color: #000;
 }
+
 h2 {
   text-align: center;
   color: aqua;
@@ -101,8 +102,8 @@ ul#nav {
   margin: -8px -1em;
   margin-bottom: 3em;
   padding: 10px 2em;
-  background-color: aquamarine;
-  background-image: linear-gradient(to left, #5c1a1b ,#e43f6f);
+  background-color: aqua;
+  background-image: linear-gradient(to left, aqua ,indigo);
   text-align: left;
   position: fixed;
   width: 100%;
@@ -118,7 +119,7 @@ ul#nav li {
 ul#nav li a {
   text-decoration: none;
   padding: 10px 0;
-  color: #78D5D7;
+  color: aqua;
   font-weight: bold;
 }
 
@@ -217,9 +218,9 @@ ul#nav li a:hover {
   text-align: center;
   border-radius: 6px;
   padding: 4px;
-  color: #d3b99f;
+  color: aqua;
   background-color: rgb(177, 148, 198);
-  background-image: linear-gradient(to left, #5c1a1b ,#e43f6f);
+  background-image: linear-gradient(to left, rgb(127, 176, 255), indigo);
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0px;
@@ -229,7 +230,7 @@ ul#nav li a:hover {
 ul#footer {
   padding: 10px 2em;
   background-color: aquamarine;
-  background-image: linear-gradient(to left, #5c1a1b ,#e43f6f);
+  background-image: linear-gradient(to left, aqua, indigo);
   text-align: left;
   position: fixed;
   width: 100%;
@@ -292,27 +293,31 @@ ul#footer {
   justify-content: space-evenly;
 }
 
-h4 {
-  position: relative;
+#ref{
+  position: flex;
   right: 600px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .refrc {
-  position: relative;
+  position: flex;
   right: 600px;
   margin-bottom: 50px;
 }
 
-.refrc li {
+.refrc p {
   font-size: 18px;
   font-weight: bold;
 }
-.refrc li a {
+.refrc p a {
   color: aquamarine;
 }
-.refrc li a:hover {
-  color: #D3B99F;
+.refrc p a:hover {
+  color: cornflowerblue;
   transition: 0.5s;
-} 
+}
+
+.hr {
+  color: rgb(120, 29, 185);
+}
