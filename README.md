@@ -1,5 +1,11 @@
 # UTS-UMNClicker
 
+FITUR
+
+- Auto-Clicker
+- UPGRADE: Pindah Cabang
+- Multiplier: Tambah Karyawan
+
 ATURAN PERMAINAN (GAMEPLAY)
 
 1. Pada layar “HOME” user bisa mengklik tombol “PLAY” untuk memulai permainan. 
