@@ -1,7 +1,6 @@
 # UTS-UMNClicker
 
 FITUR
-
 - Auto-Clicker
 - UPGRADE: Pindah Cabang
 - Multiplier: Tambah Karyawan
